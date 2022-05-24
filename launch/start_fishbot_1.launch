@@ -1,0 +1,15 @@
+<launch>
+    <arg name="ns" default="/" />
+    <group ns="$(arg ns)">
+
+        <include file="$(find bobi_vision)/launch/start_tracking.launch">
+        </include>
+
+        <include file="$(find bobi_fishbot_interface)/launch/fishbot_1.launch">
+        </include>
+
+        <include file="$(find bobi_control)/launch/position_controller.launch">
+        </include>
+
+    </group>
+</launch>
