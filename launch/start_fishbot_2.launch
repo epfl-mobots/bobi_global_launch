@@ -2,20 +2,11 @@
     <arg name="ns" default="/" />
     <group ns="$(arg ns)">
 
-        <include file="$(find bobi_vision)/launch/start_tracking.launch">
-        </include>
-
         <include file="$(find bobi_fishbot_interface)/launch/fishbot_2.launch">
         </include>
 
         <include file="$(find bobi_control)/launch/position_controller.launch">
         </include>
-
-        <include file="$(find bobi_stats)/launch/logger.launch">
-        </include>
-
-        <!-- <include file="$(find bobi_global_launch)/launch/start_video_streaming.launch">
-        </include> -->
 
     </group>
 </launch>
