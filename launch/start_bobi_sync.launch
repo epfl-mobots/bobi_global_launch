@@ -5,8 +5,8 @@
         <include file="$(find bobi_vision)/launch/start_tracking_sync.launch">
         </include>
 
-        <include file="$(find bobi_stats)/launch/logger.launch">
-        </include>
+        <!-- <include file="$(find bobi_stats)/launch/logger.launch">
+        </include> -->
 
     </group>
 </launch>
